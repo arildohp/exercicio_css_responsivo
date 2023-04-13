@@ -73,30 +73,38 @@ button{
    *{
     max-width: 1024px;
    }
-       
+    header{
+        display: flex;
+      } 
+    header .sobre-loja{
+        padding: 50px;
+        
+    }
     header h1 {
         font-size: 25px;
         height: 20px;
         width: 100%;
+        margin: auto;
     }
     .container h2{
-        font-size: 14px;
+        font-size: 16px;
+        display: inline;
+        margin: auto;
     }
     .container p{
-        font-size: 8px;
+        font-size: 12px;
     }
     
     .container , 
-    section .container,
-    .produtos{
+    section .container{
         
-        width: 70%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     section .container{
-        align-items:center;
+        align-items:flex-start;
     }
     section{
         padding: 16px 0;
@@ -112,13 +120,14 @@ button{
     }
     section img{
         
-        width: 30%;
+        width: 50%;
     }
     .produtos{
-        display: grid;
+        display:flexbox;
         grid-template-columns: repeat(2);
         padding: 6px;
-        margin-bottom: 15px;
+        margin-bottom : 15px;
+        max-width: 100%;
     }
     button{
         padding: 8px;
@@ -131,8 +140,10 @@ button{
   
 @media screen  and (max-width:760px)
      {
-       
-        
+    header{
+            display: block;
+          } 
+          
     .container{  
         max-width: 90%;
         display: block;

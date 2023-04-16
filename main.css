@@ -1,45 +1,49 @@
 *{
+   
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: roboto, sans-serif;
-    
+    font-family: roboto, sans-serif;    
 }
-
  
 header{
-    padding: 40px 0 20px;
-    border-bottom:  1px solid #ccc;
-    margin-bottom: 20px;
+    padding: 40px ;
     background-color: rgba(29, 29, 247, 0.934);
-
+}  
+header .container{
+    display: flex;
+    justify-content: space-between;
+    
 }
 header .sobre-loja{
-    margin-left: 650px;
+    padding-left: 8px;
 }
-header a{
-    color: #ffff;
-    text-decoration: none;
-   
+.container{
+     max-width: 1024px;
+     width: 100%;
+     margin: 0 auto;
 }
+
 header h1 {
     color: #ffff;
     height: 32px;
 }
+header a {
+    color: #ffff;
+    text-decoration: none;
+}
 
-.container , 
-section .container,
-.produtos{
-    max-width: 1024px;
+ 
+section .container
+{
+    
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-section .container{
-    align-items: flex-start;
-}
+
+
 section{
     padding: 24px 0;
 }
@@ -49,21 +53,27 @@ section h2{
        
 }
 
+
 section p{
     margin-bottom: 8px;
 }
 section img{
     margin-right: 32px;
-    width: 40%;
+    width: 60%;
 }
-.produtos{
-    display: grid;
-    grid-template-columns: repeat(4);
-    padding: 8px;
-    margin-bottom: 20px;
+.produtosContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.produtosContainer .produtos{
+    width: 300px;
 }
 button{
-    padding: 10px;
+    padding: 8px;
     background-color: rgba(29, 29, 247, 0.934);;
     text-transform: uppercase;
     color: #ffff;
@@ -73,13 +83,9 @@ button{
    *{
     max-width: 1024px;
    }
-    header{
-        display: flex;
-      } 
-    header .sobre-loja{
-        padding: 50px;
-        
-    }
+   
+   
+    
     header h1 {
         font-size: 25px;
         height: 20px;
@@ -100,12 +106,10 @@ button{
         
         width: 90%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
-    section .container{
-        align-items:flex-start;
-    }
+    
     section{
         padding: 16px 0;
     }
@@ -123,8 +127,6 @@ button{
         width: 50%;
     }
     .produtos{
-        display:flexbox;
-        grid-template-columns: repeat(2);
         padding: 6px;
         margin-bottom : 15px;
         max-width: 100%;
